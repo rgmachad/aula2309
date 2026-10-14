@@ -1,0 +1,5 @@
+services:
+  api:
+    image: ghcr.io/rgmachad/aula2309/minha-imagem:latest
+    ports:
+      - "8080:8080"
