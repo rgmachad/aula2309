@@ -29,12 +29,12 @@ jobs:
         cache: 'maven'            # Salva a pasta .m2 automaticamente para acelerar os próximos builds
 
     # Step 3: Garante que o script do Maven wrapper tenha permissão para rodar no Linux
-    #- name: Grant execute permission for maven wrapper
-    #  run: chmod +x mvnw
+    - name: Grant execute permission for maven wrapper
+      run: chmod +x mvnw
 
     # Step 4: Compila o código, roda os testes unitários e empacota tudo em um arquivo .jar
     - name: Build with Maven (Compile, Test and Package)
-      run: mvn clean package
+      run: ./mvnw clean package
 
     # Step 5: Salva o arquivo .jar gerado como um artefato do GitHub (opcional, útil para o Lab 2)
     - name: Upload Build Artifact
