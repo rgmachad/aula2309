@@ -33,9 +33,9 @@ jobs:
       run: ./mvnw clean package
 
     # Step 5: Salva o arquivo .jar gerado como um artefato do GitHub (opcional, útil para o Lab 2)
-    - name: Upload Build Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: springboot-app-jar
-        path: target/*.jar        # O Maven por padrão joga o .jar gerado dentro da pasta 'target'
-        retention-days: 5         # Mantém o arquivo guardado no GitHub por 5 dias
+    #- name: Upload Build Artifact
+    #  uses: actions/upload-artifact@v4
+    #  with:
+    #    name: springboot-app-jar
+    #    path: target/*.jar        # O Maven por padrão joga o .jar gerado dentro da pasta 'target'
+    #    retention-days: 5         # Mantém o arquivo guardado no GitHub por 5 dias
