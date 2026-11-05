@@ -12,6 +12,6 @@ public class MeuController {
     @GetMapping("/api") // informa caminho
     public String mensagem() { // método mensagem() que retorna uma string
         System.out.println("Resposta da API REST (println).");
-        return "Resposta da API REST (retorno versão 4 Continuous Dellivery - 04/11/26).";
+        return "Resposta da API REST (retorno versão 4.0 - Continuous Delivery - 04/11/26).";
     }
 }
